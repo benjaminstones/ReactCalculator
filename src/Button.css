@@ -1,0 +1,29 @@
+
+   
+.calc-button {
+    display: inline-flex;
+    width: 25%;
+    flex: 1 0 auto;
+  }
+  
+  /* .calc-button.wide {
+    width: 50%;
+  } */
+  
+  .calc-button button {
+    background-color: #e0e0e0;
+    border: 0;
+    font-size: 1.5rem;
+    margin: 5px 5px 0 0;
+    flex: 1 0 auto;
+    padding: 0;
+  }
+  
+  /* .calc-button:last-child button {
+    margin-right: 0;
+  }
+  
+  .calc-button.orange button {
+    background-color: #f5923e;
+    color: white;
+  } */
