@@ -4,14 +4,8 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-
-  const evil = (fn) => {
-    return new Function('return ' + fn)();
-  }
-
   const [total, setTotal] = useState('0');
   const [expression, setExpression] = useState('0');
-
 
   const calculate = (expression) => {
     var stringMath = require('string-math');
@@ -39,8 +33,7 @@ calculator.net
 
   return (
     <div className='calc-container'>
-      <Display text={expression}/>
-      <Display text={total}/>
+      <Display expression={expression} total = {total} />
       <ButtonContainer clickHandler={handleClick}/>
     </div>
   );

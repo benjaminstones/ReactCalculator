@@ -1,5 +1,5 @@
 .button-container {
-    background-color: #858694;
+    background-color: #202124;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,4 +11,8 @@
     margin-bottom: 1px;
     flex: 1 0 auto;
     display: flex;
+  }
+
+  .button-row {
+    height: 70px;
   }

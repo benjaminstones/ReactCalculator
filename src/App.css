@@ -40,4 +40,8 @@
 .calc-container {
   background-color: #61dafb;
   height: 100%;
+  border:3px solid black;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
 }
