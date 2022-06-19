@@ -12,6 +12,9 @@
   .calc-button.wide {
     width: 50%;
   }
+  .calc-button.tall {
+    height: 200%;
+  }
   
   .calc-button button {
     background-color: #e0e0e0;

@@ -19,7 +19,7 @@ calculator.net
       if (buttonName === '=') {
         setExpression(expression.concat(buttonName));
         setTotal(calculate(expression));
-      } else if (buttonName === 'C') {
+      } else if (buttonName === 'AC') {
         setTotal('0')
         setExpression('0')
       } else if (buttonType === 'num' || buttonType === 'op') {

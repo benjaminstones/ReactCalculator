@@ -36,7 +36,9 @@ function ButtonContainer(props) {
           <Button btnName={'/'} btnType={'op'} clickHandler={handleClick}/>
         </div>
         <div className='button-row'> 
-        <Button btnName={'C'} btnType={'util'} clickHandler={handleClick}/>
+        <Button btnName={'('} btnType={'num'} clickHandler={handleClick}/>
+        <Button btnName={')'} btnType={'num'} clickHandler={handleClick}/>
+        <Button btnName={'AC'} btnType={'util'} clickHandler={handleClick}/>
         </div>
       </div>
     );
