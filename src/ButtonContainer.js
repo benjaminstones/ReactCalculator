@@ -2,15 +2,20 @@ import './ButtonContainer.css'
 import Button from './Button';
 
 function ButtonContainer(props) {
-
+  
     const handleClick = (buttonName, buttonType) => {
         props.clickHandler(buttonName, buttonType);
       };
 
     return (
-      <div className='button-container'>
+      <div className='button-container'>        
         <div className='button-row'> 
-
+          <Button btnName={'AC'} btnType={'util'} clickHandler={handleClick}/>
+          <Button btnName={'('} btnType={'num'} clickHandler={handleClick}/>
+          <Button btnName={')'} btnType={'num'} clickHandler={handleClick}/>
+          <Button btnName={'del'} btnType={'util'} clickHandler={handleClick}/>
+        </div>
+        <div className='button-row'> 
           <Button btnName={'1'} btnType={'num'} clickHandler={handleClick}/>
           <Button btnName={'2'} btnType={'num'} clickHandler={handleClick}/>
           <Button btnName={'3'} btnType={'num'} clickHandler={handleClick}/>
@@ -35,11 +40,7 @@ function ButtonContainer(props) {
           <Button btnName={'='} btnType={'util'} clickHandler={handleClick}/>
           <Button btnName={'/'} btnType={'op'} clickHandler={handleClick}/>
         </div>
-        <div className='button-row'> 
-        <Button btnName={'('} btnType={'num'} clickHandler={handleClick}/>
-        <Button btnName={')'} btnType={'num'} clickHandler={handleClick}/>
-        <Button btnName={'AC'} btnType={'util'} clickHandler={handleClick}/>
-        </div>
+
       </div>
     );
   }

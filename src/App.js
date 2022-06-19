@@ -22,6 +22,8 @@ calculator.net
       } else if (buttonName === 'AC') {
         setTotal('0')
         setExpression('0')
+      } else if ((buttonName === 'del')) {
+        setExpression(expression.slice(0, -1))
       } else if (buttonType === 'num' || buttonType === 'op') {
         if (expression.endsWith('=') || expression === '0') {
             setExpression(buttonName);
