@@ -1,6 +1,7 @@
 import Display from './Display';
 import ButtonContainer from './ButtonContainer';
 import { useState } from 'react';
+import { UTIL, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js'
 import './App.css';
 
 function App() {
@@ -24,7 +25,7 @@ calculator.net
         setExpression('0')
       } else if ((buttonName === 'del')) {
         setExpression(expression.slice(0, -1))
-      } else if (buttonType === 'num' || buttonType === 'op') {
+      } else if (buttonType === NON_OPERATOR_CHAR || buttonType === OPERATOR_CHAR) {
         if (expression.endsWith('=') || expression === '0') {
             setExpression(buttonName);
         } else {

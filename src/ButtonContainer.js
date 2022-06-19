@@ -1,5 +1,6 @@
 import './ButtonContainer.css'
 import Button from './Button';
+import { UTIL, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js'
 
 function ButtonContainer(props) {
 
@@ -10,35 +11,35 @@ function ButtonContainer(props) {
     return (
       <div className='button-container'>        
         <div className='button-row'> 
-          <Button btnName={'AC'} btnType={'util'} clickHandler={handleClick}/>
-          <Button btnName={'('} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={')'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'del'} btnType={'util'} clickHandler={handleClick}/>
+          <Button btnName={'AC'} btnType={UTIL} clickHandler={handleClick}/>
+          <Button btnName={'('} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={')'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'del'} btnType={UTIL} clickHandler={handleClick}/>
         </div>
         <div className='button-row'> 
-          <Button btnName={'1'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'2'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'3'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'+'} btnType={'op'} clickHandler={handleClick}/>
+          <Button btnName={'1'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'2'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'3'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'+'} btnType={OPERATOR_CHAR} clickHandler={handleClick}/>
         </div>
         <div className='button-row'> 
-          <Button btnName={'4'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'5'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'6'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'-'} btnType={'op'} clickHandler={handleClick}/>
+          <Button btnName={'4'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'5'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'6'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'-'} btnType={OPERATOR_CHAR} clickHandler={handleClick}/>
 
         </div>
         <div className='button-row'> 
-          <Button btnName={'7'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'8'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'9'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'*'} btnType={'op'} clickHandler={handleClick}/>
+          <Button btnName={'7'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'8'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'9'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'*'} btnType={OPERATOR_CHAR} clickHandler={handleClick}/>
         </div>
         <div className='button-row'> 
-          <Button btnName={'.'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'0'} btnType={'num'} clickHandler={handleClick}/>
-          <Button btnName={'='} btnType={'util'} clickHandler={handleClick}/>
-          <Button btnName={'/'} btnType={'op'} clickHandler={handleClick}/>
+          <Button btnName={'.'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'0'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick}/>
+          <Button btnName={'='} btnType={UTIL} clickHandler={handleClick}/>
+          <Button btnName={'/'} btnType={OPERATOR_CHAR} clickHandler={handleClick}/>
         </div>
 
       </div>
