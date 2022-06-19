@@ -1,12 +1,12 @@
 import Display from './Display';
 import ButtonContainer from './ButtonContainer';
 import { useState } from 'react';
-import { UTIL, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js'
+import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js'
 import './App.css';
 
 function App() {
-  const [total, setTotal] = useState('0');
-  const [expression, setExpression] = useState('0');
+  const [total, setTotal] = useState(EMPTY);
+  const [expression, setExpression] = useState(EMPTY);
 
   const calculate = (expression) => {
     var stringMath = require('string-math');
@@ -21,12 +21,17 @@ calculator.net
         setExpression(expression.concat(buttonName));
         setTotal(calculate(expression));
       } else if (buttonName === 'AC') {
-        setTotal('0')
-        setExpression('0')
+        setTotal(EMPTY)
+        setExpression(EMPTY)
       } else if ((buttonName === 'del')) {
-        setExpression(expression.slice(0, -1))
+          if (expression.length === 1) {
+            setExpression(EMPTY)
+          } else {
+            setExpression(expression.slice(0, -1))
+          } 
+        
       } else if (buttonType === NON_OPERATOR_CHAR || buttonType === OPERATOR_CHAR) {
-        if (expression.endsWith('=') || expression === '0') {
+        if (expression.endsWith('=') || expression === EMPTY) {
             setExpression(buttonName);
         } else {
             setExpression(expression.concat(buttonName));
