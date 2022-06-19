@@ -2,7 +2,7 @@ import './ButtonContainer.css'
 import Button from './Button';
 
 function ButtonContainer(props) {
-  
+
     const handleClick = (buttonName, buttonType) => {
         props.clickHandler(buttonName, buttonType);
       };
