@@ -4,8 +4,6 @@
     display: inline-flex;
     width: 25%;
     height: 100%;
-    flex: 1 0 auto;
-    border-radius: 50px;
     margin: 0;
   }
   
@@ -21,16 +19,14 @@
     font-size: 1.5rem;
     margin: 5px 2.5px 2.5px 5px;
     flex: 1 0 auto;
-    padding: 0;
     border-radius: 8px;
   }
 
   .highlighted-button button{
-    background-color: #F9A93B;
+    background-color: #D0E6F4;
     font-size: 1.5rem;
     margin: 5px 2.5px 2.5px 5px;
     flex: 1 0 auto;
-    padding: 0;
     border-radius: 8px;
   }
  
