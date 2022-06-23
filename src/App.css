@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #202124;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: black;
 }
 
 @keyframes App-logo-spin {
@@ -38,9 +38,9 @@
 }
 
 .calc-container {
-  background-color: #61dafb;
+  background-color: #202124;
   height: 100%;
-  border:3px solid black;
+  border: 5px solid black;
   width: 50%;
   margin: auto;
   margin-top: 50px;

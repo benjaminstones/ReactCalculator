@@ -1,5 +1,5 @@
-import Display from './Display';
-import ButtonContainer from './ButtonContainer';
+import Display from './components/display/Display.js'
+import ButtonContainer from './components/buttonContainer/ButtonContainer';
 import { useState } from 'react';
 import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './Constants.js'
 import './App.css';

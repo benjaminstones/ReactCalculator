@@ -1,6 +1,6 @@
 import './ButtonContainer.css'
-import Button from './Button';
-import { UTIL, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './Constants.js'
+import Button from '../button/Button';
+import { UTIL, NON_OPERATOR_CHAR, OPERATOR_CHAR } from '../../Constants.js'
 
 function ButtonContainer(props) {
 
