@@ -6,3 +6,14 @@
   margin: auto;
   margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+  .calc-container { 
+    background-color: #202124;
+    height: 100%;
+    border: 5px solid black;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
