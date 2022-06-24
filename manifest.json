@@ -1,0 +1,6 @@
+{
+  "short_name": "Basic Calculator",
+  "name": "A basic React calculator",
+  "start_url": ".",
+  "display": "standalone"
+}
