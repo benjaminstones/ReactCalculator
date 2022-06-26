@@ -18,5 +18,14 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "brace-style": "error",
+        "indent": [
+            "error", 
+            "tab"
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
     }
 }
