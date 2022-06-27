@@ -33,13 +33,13 @@ function ButtonContainer(props) {
 				<Button btnName={'7'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick} />
 				<Button btnName={'8'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick} />
 				<Button btnName={'9'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick} />
-				<Button btnName={'*'} btnType={OPERATOR_CHAR} clickHandler={handleClick} />
+				<Button btnName={'\u00d7'} btnType={OPERATOR_CHAR} clickHandler={handleClick} />
 			</div>
 			<div className='button-row'>
 				<Button btnName={'.'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick} />
 				<Button btnName={'0'} btnType={NON_OPERATOR_CHAR} clickHandler={handleClick} />
 				<Button btnName={'='} btnType={UTIL} clickHandler={handleClick} />
-				<Button btnName={'/'} btnType={OPERATOR_CHAR} clickHandler={handleClick} />
+				<Button btnName={'\u00f7'} btnType={OPERATOR_CHAR} clickHandler={handleClick} />
 			</div>
 
 		</div>

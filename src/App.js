@@ -13,6 +13,7 @@ function App() {
 		return stringMath(expression);
 	}
 
+
 	const handleClick = (buttonName, buttonType) => {
 		if (buttonName === '=') {
 			setExpression(expression.concat(buttonName));
@@ -26,10 +27,13 @@ function App() {
 			} else {
 				setExpression(expression.slice(0, -1))
 			}
-
 		} else if (buttonType === NON_OPERATOR_CHAR || buttonType === OPERATOR_CHAR) {
 			if (expression.endsWith('=') || expression === EMPTY) {
 				setExpression(buttonName);
+			} else if (buttonName === '\u00f7') {
+				setExpression(expression.concat('/'));
+			} else if (buttonName === '\u00d7') {
+				setExpression(expression.concat('*'));
 			} else {
 				setExpression(expression.concat(buttonName));
 			}
