@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { OPERATOR_CHAR, UTIL } from '../../Constants';
+import { HIGHLIGHTED } from '../../Constants';
 import './Button.css';
 
 function Button(props) {
 	const handleClick = () => {
-		props.clickHandler(props.btnName, props.btnType);
+		props.clickHandler(props.btnName, props.btnTags);
 	};
 	const [isHighlighted, setIsHighlighted] = useState(false);
 
 	useEffect(() => {
-		if (props.btnName === 'AC' || props.btnType === UTIL || props.btnType === OPERATOR_CHAR) {
-			console.log(true);
+		if (Object.values(props.btnTags).indexOf(HIGHLIGHTED) > -1) {
 			setIsHighlighted(true);
 		}
 	});
