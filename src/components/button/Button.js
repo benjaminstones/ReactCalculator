@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { OPERATOR_CHAR, UTIL } from '../../Constants';
+import { HIGHLIGHTED } from '../../Constants';
 import './Button.css';
 
 function Button(props) {
@@ -9,7 +9,7 @@ function Button(props) {
 	const [isHighlighted, setIsHighlighted] = useState(false);
 
 	useEffect(() => {
-		if (props.btnName === 'AC' || props.btnTags === UTIL || props.btnTags === OPERATOR_CHAR) {
+		if (Object.values(props.btnTags).indexOf(HIGHLIGHTED) > -1) {
 			setIsHighlighted(true);
 		}
 	});
