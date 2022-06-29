@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ButtonContainer from './components/buttonContainer/ButtonContainer';
 import Display from './components/display/Display.js';
-import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './Constants.js';
+import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js';
 
 function App() {
 	const [total, setTotal] = useState(EMPTY);

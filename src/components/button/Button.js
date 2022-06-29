@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HIGHLIGHTED } from '../../Constants';
+import { HIGHLIGHTED } from '../../constants';
 import './Button.css';
 
 function Button(props) {
