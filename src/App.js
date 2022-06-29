@@ -14,7 +14,8 @@ function App() {
 	}
 
 
-	const handleClick = (buttonName, buttonType) => {
+	const handleClick = (buttonName, buttonTags) => {
+		console.log(buttonTags)
 		if (buttonName === '=') {
 			setExpression(expression.concat(buttonName));
 			setTotal(calculate(expression));
@@ -27,7 +28,7 @@ function App() {
 			} else {
 				setExpression(expression.slice(0, -1))
 			}
-		} else if (buttonType === NON_OPERATOR_CHAR || buttonType === OPERATOR_CHAR) {
+		} else if (Object.values(buttonTags).indexOf(NON_OPERATOR_CHAR) > -1|| Object.values(buttonTags).indexOf(OPERATOR_CHAR) > -1) {
 			if (expression.endsWith('=') || expression === EMPTY) {
 				setExpression(buttonName);
 			} else if (buttonName === '\u00f7') {
