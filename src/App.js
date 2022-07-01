@@ -3,16 +3,11 @@ import './App.css';
 import ButtonContainer from './components/buttonContainer/ButtonContainer';
 import Display from './components/display/Display.js';
 import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js';
+import { calculate } from './calculations';
 
 function App() {
 	const [total, setTotal] = useState(EMPTY);
 	const [expression, setExpression] = useState(EMPTY);
-
-	const calculate = (expression) => {
-		var stringMath = require('string-math');
-		return stringMath(expression);
-	}
-
 
 	const handleClick = (buttonName, buttonTags) => {
 		console.log(buttonTags)
