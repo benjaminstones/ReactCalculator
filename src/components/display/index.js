@@ -1,4 +1,4 @@
-import './Display.css';
+import { StyledDisplayContainer, StyledDisplayText } from './styles/styled';
 
 const formatUnicode = (outputText) => {
 	let formattedText = outputText.replaceAll('*', '\u00d7')
@@ -8,10 +8,10 @@ const formatUnicode = (outputText) => {
 
 function Display(props) {
 	return (
-		<div className='display-container'>
-			<h1>{formatUnicode(props.expression)}</h1>
-			<h1>{props.total}</h1>
-		</div>
+		<StyledDisplayContainer>
+			<StyledDisplayText>{formatUnicode(props.expression)}</StyledDisplayText>
+			<StyledDisplayText>{props.total}</StyledDisplayText>
+		</StyledDisplayContainer>
 	);
 }
 
