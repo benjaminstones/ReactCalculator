@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import ButtonContainer from './components/buttonContainer/ButtonContainer';
-import Display from './components/display/Display.js';
+import ButtonContainer from './components/buttonContainer';
+import Display from './components/display/index.js';
 import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js';
 import { calculate } from './calculations';
 

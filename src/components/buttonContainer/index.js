@@ -1,5 +1,5 @@
 import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED } from '../../constants.js';
-import Button from '../button/Button';
+import Button from '../button';
 import './ButtonContainer.css';
 
 function ButtonContainer(props) {
