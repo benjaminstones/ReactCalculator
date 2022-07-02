@@ -10,7 +10,6 @@ function App() {
 	const [expression, setExpression] = useState(EMPTY);
 
 	const handleClick = (buttonName, buttonTags) => {
-		console.log(buttonTags)
 		if (buttonName === '=') {
 			setExpression(expression.concat(buttonName));
 			setTotal(calculate(expression));

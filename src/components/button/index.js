@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HIGHLIGHTED } from '../../constants';
-import './Button.css';
+import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButton } from './styles/styles';
 
 function Button(props) {
 	const handleClick = () => {
@@ -15,9 +15,11 @@ function Button(props) {
 	});
 
 	return (
-		<div className={isHighlighted ? 'calc-button highlighted-button' : 'calc-button'}>
-			<button onClick={handleClick}>{props.btnName}</button>
-		</div>
+		<StyledButtonContainer>
+			{isHighlighted ? 
+				<StyledHighlightedButton onClick={handleClick}>{props.btnName}</StyledHighlightedButton> : 
+				<StyledUnhighlightedButton onClick={handleClick}>{props.btnName}</StyledUnhighlightedButton>}
+		</StyledButtonContainer>
 	);
 }
 
