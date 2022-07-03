@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ButtonContainer from './components/buttonContainer';
 import Display from './components/display/index.js';
-import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants.js';
+import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants/index.js';
 import { calculate } from './calculations';
 
 function App() {

@@ -1,4 +1,4 @@
-import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED } from '../../constants.js';
+import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED } from '../../constants/index.js';
 import Button from '../button';
 import { StyledButtonContainer, StyledButtonRow } from './styles/styled.js';
 
