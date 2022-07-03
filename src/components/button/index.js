@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { HIGHLIGHTED } from '../../constants';
+import { isBtnTagFound } from '../../stringUtils';
 import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButton } from './styles/styled';
 
 function Button(props) {
 	const handleClick = () => {
-		props.clickHandler(props.btnName, props.btnTags);
+		props.clickHandler(props.btName, props.btnTags);
 	};
+	
 	const [isHighlighted, setIsHighlighted] = useState(false);
 
 	useEffect(() => {
-		if (Object.values(props.btnTags).indexOf(HIGHLIGHTED) > -1) {
+		if (isBtnTagFound(props.btnTags, HIGHLIGHTED)) {
 			setIsHighlighted(true);
 		}
 	});

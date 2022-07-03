@@ -3,7 +3,7 @@ import './App.css';
 import ButtonContainer from './components/buttonContainer';
 import Display from './components/display/index.js';
 import { DIVIDE_SIGN, EMPTY, MULTIPLY_SIGN, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants/index.js';
-import { calculate } from './calculations';
+import { calculateExpressionFromString, isBtnTagFound } from './stringUtils';
 
 function App() {
 	const [total, setTotal] = useState(EMPTY);
@@ -12,7 +12,7 @@ function App() {
 	const handleClick = (buttonName, buttonTags) => {
 		if (buttonName === '=') {
 			setExpression(expression.concat(buttonName));
-			setTotal(calculate(expression));
+			setTotal(calculateExpressionFromString(expression));
 		} else if (buttonName === 'AC') {
 			setTotal(EMPTY)
 			setExpression(EMPTY)
@@ -22,7 +22,7 @@ function App() {
 			} else {
 				setExpression(expression.slice(0, -1))
 			}
-		} else if (Object.values(buttonTags).indexOf(NON_OPERATOR_CHAR) > -1|| Object.values(buttonTags).indexOf(OPERATOR_CHAR) > -1) {
+		} else if (isBtnTagFound(buttonTags, NON_OPERATOR_CHAR) || isBtnTagFound(buttonTags, OPERATOR_CHAR)) {
 			if (expression.endsWith('=') || expression === EMPTY) {
 				setExpression(buttonName);
 			} else if (buttonName === DIVIDE_SIGN) {
