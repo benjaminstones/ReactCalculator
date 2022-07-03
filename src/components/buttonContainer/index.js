@@ -1,4 +1,4 @@
-import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED } from '../../constants/index.js';
+import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED, MULTIPLY_SIGN, DIVIDE_SIGN } from '../../constants/index.js';
 import Button from '../button';
 import { StyledButtonContainer, StyledButtonRow } from './styles/styled.js';
 
@@ -33,13 +33,13 @@ function ButtonContainer(props) {
 				<Button btnName={'7'} btnTags={{NON_OPERATOR_CHAR}} clickHandler={handleClick} />
 				<Button btnName={'8'} btnTags={{NON_OPERATOR_CHAR}} clickHandler={handleClick} />
 				<Button btnName={'9'} btnTags={{NON_OPERATOR_CHAR}} clickHandler={handleClick} />
-				<Button btnName={'\u00d7'} btnTags={{OPERATOR_CHAR, HIGHLIGHTED}} clickHandler={handleClick} />
+				<Button btnName={MULTIPLY_SIGN} btnTags={{OPERATOR_CHAR, HIGHLIGHTED}} clickHandler={handleClick} />
 			</StyledButtonRow>
 			<StyledButtonRow className='button-row'>
 				<Button btnName={'.'} btnTags={{NON_OPERATOR_CHAR}} clickHandler={handleClick} />
 				<Button btnName={'0'} btnTags={{NON_OPERATOR_CHAR}} clickHandler={handleClick} />
 				<Button btnName={'='} btnTags={{UTIL, HIGHLIGHTED}} clickHandler={handleClick} />
-				<Button btnName={'\u00f7'} btnTags={{OPERATOR_CHAR, HIGHLIGHTED}} clickHandler={handleClick} />
+				<Button btnName={DIVIDE_SIGN} btnTags={{OPERATOR_CHAR, HIGHLIGHTED}} clickHandler={handleClick} />
 			</StyledButtonRow>
 		</StyledButtonContainer>
 	);

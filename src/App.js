@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ButtonContainer from './components/buttonContainer';
 import Display from './components/display/index.js';
-import { EMPTY, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants/index.js';
+import { DIVIDE_SIGN, EMPTY, MULTIPLY_SIGN, NON_OPERATOR_CHAR, OPERATOR_CHAR } from './constants/index.js';
 import { calculate } from './calculations';
 
 function App() {
@@ -25,9 +25,9 @@ function App() {
 		} else if (Object.values(buttonTags).indexOf(NON_OPERATOR_CHAR) > -1|| Object.values(buttonTags).indexOf(OPERATOR_CHAR) > -1) {
 			if (expression.endsWith('=') || expression === EMPTY) {
 				setExpression(buttonName);
-			} else if (buttonName === '\u00f7') {
+			} else if (buttonName === DIVIDE_SIGN) {
 				setExpression(expression.concat('/'));
-			} else if (buttonName === '\u00d7') {
+			} else if (buttonName === MULTIPLY_SIGN) {
 				setExpression(expression.concat('*'));
 			} else {
 				setExpression(expression.concat(buttonName));
