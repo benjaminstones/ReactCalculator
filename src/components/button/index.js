@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HIGHLIGHTED } from '../../constants';
-import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButton } from './styles/styles';
+import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButton } from './styles/styled';
 
 function Button(props) {
 	const handleClick = () => {
