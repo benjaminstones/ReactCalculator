@@ -5,7 +5,7 @@ import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButt
 
 function Button(props) {
 	const handleClick = () => {
-		props.clickHandler(props.btName, props.btnTags);
+		props.clickHandler(props.btnName, props.btnTags);
 	};
 	
 	const [isHighlighted, setIsHighlighted] = useState(false);

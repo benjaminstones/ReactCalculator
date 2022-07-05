@@ -1,8 +1,9 @@
+import { DIVIDE_SIGN, MULTIPLY_SIGN } from '../../constants';
 import { StyledDisplayContainer, StyledDisplayText } from './styles/styled';
 
 const formatUnicode = (outputText) => {
-	let formattedText = outputText.replaceAll('*', '\u00d7')
-	formattedText = formattedText.replaceAll('/', '\u00f7')
+	let formattedText = outputText.replaceAll('*', MULTIPLY_SIGN)
+	formattedText = formattedText.replaceAll('/', DIVIDE_SIGN)
 	return(formattedText)
 }
 
