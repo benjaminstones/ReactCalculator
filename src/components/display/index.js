@@ -4,7 +4,7 @@ import { StyledDisplayContainer, StyledDisplayText } from './styles/styled';
 const formatUnicode = (outputText) => {
 	let formattedText = outputText.replaceAll('*', MULTIPLY_SIGN)
 	formattedText = formattedText.replaceAll('/', DIVIDE_SIGN)
-	return(formattedText)
+	return (formattedText)
 }
 
 function Display(props) {

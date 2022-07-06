@@ -3,7 +3,7 @@ export const calculateExpressionFromString = (expression) => {
 	return stringMath(expression);
 }
 
-export const isBtnTagFound = (tags, tagToCheck ) => {
+export const isBtnTagFound = (tags, tagToCheck) => {
 	if (Object.values(tags).indexOf(tagToCheck) > -1) {
 		return true;
 	} else {

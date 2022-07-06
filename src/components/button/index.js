@@ -7,7 +7,7 @@ function Button(props) {
 	const handleClick = () => {
 		props.clickHandler(props.btnName, props.btnTags);
 	};
-	
+
 	const [isHighlighted, setIsHighlighted] = useState(false);
 
 	useEffect(() => {
@@ -18,8 +18,8 @@ function Button(props) {
 
 	return (
 		<StyledButtonContainer>
-			{isHighlighted ? 
-				<StyledHighlightedButton onClick={handleClick}>{props.btnName}</StyledHighlightedButton> : 
+			{isHighlighted ?
+				<StyledHighlightedButton onClick={handleClick}>{props.btnName}</StyledHighlightedButton> :
 				<StyledUnhighlightedButton onClick={handleClick}>{props.btnName}</StyledUnhighlightedButton>}
 		</StyledButtonContainer>
 	);
