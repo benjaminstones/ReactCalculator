@@ -1,3 +1,4 @@
+import React from 'react';
 import { DIVIDE_SIGN, MULTIPLY_SIGN } from '../../constants';
 import { StyledDisplayContainer, StyledDisplayText } from './styles/styled';
 
