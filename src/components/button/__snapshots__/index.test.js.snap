@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render the Button Component correctly 1`] = `
+<styled.div>
+  <styled.button
+    onClick={[Function]}
+  >
+    AC
+  </styled.button>
+</styled.div>
+`;
