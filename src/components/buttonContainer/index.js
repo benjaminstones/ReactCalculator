@@ -1,3 +1,4 @@
+import React from 'react';
 import { NON_OPERATOR_CHAR, OPERATOR_CHAR, UTIL, HIGHLIGHTED, MULTIPLY_SIGN, DIVIDE_SIGN } from '../../constants/index.js';
 import Button from '../button';
 import { StyledButtonContainer, StyledButtonRow } from './styles/styled.js';

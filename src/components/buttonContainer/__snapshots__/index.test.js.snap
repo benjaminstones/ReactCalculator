@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonContainer should render the ButtonContainer Component correctly 1`] = `
+<styled.div>
+  <styled.div
+    className="button-row"
+  >
+    <Button
+      btnName="AC"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "UTIL": "UTIL",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="("
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName=")"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="del"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "UTIL": "UTIL",
+        }
+      }
+      clickHandler={[Function]}
+    />
+  </styled.div>
+  <styled.div
+    className="button-row"
+  >
+    <Button
+      btnName="1"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="2"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="3"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="+"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "OPERATOR_CHAR": "OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+  </styled.div>
+  <styled.div
+    className="button-row"
+  >
+    <Button
+      btnName="4"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="5"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="6"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="-"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "OPERATOR_CHAR": "OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+  </styled.div>
+  <styled.div
+    className="button-row"
+  >
+    <Button
+      btnName="7"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="8"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="9"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="×"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "OPERATOR_CHAR": "OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+  </styled.div>
+  <styled.div
+    className="button-row"
+  >
+    <Button
+      btnName="."
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="0"
+      btnTags={
+        Object {
+          "NON_OPERATOR_CHAR": "NON_OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="="
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "UTIL": "UTIL",
+        }
+      }
+      clickHandler={[Function]}
+    />
+    <Button
+      btnName="÷"
+      btnTags={
+        Object {
+          "HIGHLIGHTED": "HIGHLIGHTED",
+          "OPERATOR_CHAR": "OPERATOR_CHAR",
+        }
+      }
+      clickHandler={[Function]}
+    />
+  </styled.div>
+</styled.div>
+`;
