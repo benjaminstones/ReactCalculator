@@ -11,8 +11,8 @@ const formatUnicode = (outputText) => {
 function Display(props) {
 	return (
 		<StyledDisplayContainer>
-			<StyledDisplayText>{formatUnicode(props.expression)}</StyledDisplayText>
-			<StyledDisplayText>{props.total}</StyledDisplayText>
+			<StyledDisplayText id='expression-display'>{formatUnicode(props.expression)}</StyledDisplayText>
+			<StyledDisplayText id='total-display'>{props.total}</StyledDisplayText>
 		</StyledDisplayContainer>
 	);
 }

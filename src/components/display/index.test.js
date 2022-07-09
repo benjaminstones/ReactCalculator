@@ -10,6 +10,11 @@ describe('Display', () => {
 		expect(wrapped).toMatchSnapshot();
 	});
 	it ('should render an expression and total in the display', () => {
+		const expressionDisplay = wrapped.find('#expression-display');
+		const totalDisplay = wrapped.find('#total-display')
+
 		expect(wrapped.find(StyledDisplayText)).toHaveLength(2);
+		expect(expressionDisplay.exists()).toBe(true);
+		expect(totalDisplay.exists()).toBe(true);
 	})
 });

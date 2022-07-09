@@ -2,10 +2,14 @@
 
 exports[`Display should render the Display Component correctly 1`] = `
 <styled.div>
-  <styled.h1>
+  <styled.h1
+    id="expression-display"
+  >
     2+3=
   </styled.h1>
-  <styled.h1>
+  <styled.h1
+    id="total-display"
+  >
     5
   </styled.h1>
 </styled.div>
