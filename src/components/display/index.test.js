@@ -17,4 +17,14 @@ describe('Display', () => {
 		expect(expressionDisplay.exists()).toBe(true);
 		expect(totalDisplay.exists()).toBe(true);
 	})
+	it('should output the expression correctly', () => {
+		const expressionDisplay = wrapped.find('#expression-display');
+
+		expect(expressionDisplay.text()).toBe('2+3=')
+	});
+	it('should output the total correctly', () => {
+		const totalDisplay = wrapped.find('#total-display')
+
+		expect(totalDisplay.text()).toBe('5')
+	});
 });
