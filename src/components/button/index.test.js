@@ -15,6 +15,12 @@ describe('Button', () => {
 		expect(wrapper.find(StyledUnhighlightedButton)).toHaveLength(1);
 	});
 
+	it('should display the correct value on the button', () => {
+		let wrapper = shallow(<Button btnName={'2'} btnTags={{ UNHIGHLIGHTED }} />);
+		const buttonContents = wrapper.find(StyledUnhighlightedButton);
+		expect(buttonContents.text()).toBe('')
+	})
+
 	//FLAKE?
 	// it('should render a highlighted button if the highlighted tag is given', () => {
 	// 	let wrapper = shallow(<Button btnName={'AC'} btnTags={{ HIGHLIGHTED }} />);
