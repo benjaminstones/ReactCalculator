@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Display from './index.js'
+import Display, { formatOutputWithUnicode } from './index.js'
 import '../../setupTests'
 import { StyledDisplayText } from './styles/styled.js';
 
@@ -28,3 +28,22 @@ describe('Display', () => {
 		expect(totalDisplay.text()).toBe('5')
 	});
 });
+
+describe('Output unicode formatter', () => {
+	it('should display unicode vals when / is present', () => {
+		const actual = formatOutputWithUnicode('2/3');
+		const expected = '2\u00f73';
+		expect(actual).toEqual(expected);
+	})
+	it('should display unicode vals when * is present', () => {
+		const actual = formatOutputWithUnicode('2*3');
+		const expected = '2\u00d73';
+		expect(actual).toEqual(expected);
+	})
+
+	it('should not alter a string when neither * or / are present', () => {
+		const actual = formatOutputWithUnicode('2+3-5');
+		expect(actual).toEqual(expect.not.stringContaining('\u00d7'));
+		expect(actual).toEqual(expect.not.stringContaining('\u00f7'));
+	})
+})
