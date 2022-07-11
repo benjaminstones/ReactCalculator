@@ -18,7 +18,7 @@ describe('Button', () => {
 	it('should display the correct value on the button', () => {
 		let wrapper = shallow(<Button btnName={'2'} btnTags={{ UNHIGHLIGHTED }} />);
 		const buttonContents = wrapper.find(StyledUnhighlightedButton);
-		expect(buttonContents.text()).toBe('')
+		expect(buttonContents.text()).toBe('2')
 	})
 
 	//FLAKE?
