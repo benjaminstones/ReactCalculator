@@ -41,8 +41,10 @@ describe('Output unicode formatter', () => {
 		expect(actual).toEqual(expected);
 	})
 
-	it('should not alter a string when neither * or / are present', () => {
-		const actual = formatOutputWithUnicode('2+3-5');
+	const cases = ['1+2', '2-3', '4.5-6.7', '(8.9+1.2-3.4)=']
+
+	test.each(cases) ('should not alter %p as neither * or / are present', (expression) => {
+		const actual = formatOutputWithUnicode(expression);
 		expect(actual).toEqual(expect.not.stringContaining('\u00d7'));
 		expect(actual).toEqual(expect.not.stringContaining('\u00f7'));
 	})
