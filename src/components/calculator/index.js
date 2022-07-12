@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './index.css'
 import ButtonContainer from '../../components/buttonContainer';
 import Display from '../../components/display/index.js';
 import { DIVIDE_SIGN, EMPTY, MULTIPLY_SIGN, NON_OPERATOR_CHAR, OPERATOR_CHAR } from '../../constants/index.js';
 import { calculateExpressionFromString, isBtnTagFound } from '../../stringUtils';
+import { StyledCalculatorContainer } from './styles/styled';
 
 
 export const Calculator = () => {
@@ -37,9 +37,9 @@ export const Calculator = () => {
 	}
 
 	return (
-		<div className='calc-container'>
+		<StyledCalculatorContainer>
 			<Display expression={expression} total={total} />
 			<ButtonContainer clickHandler={handleClick} />
-		</div>
+		</StyledCalculatorContainer>
 	);
 }
