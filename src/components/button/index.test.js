@@ -12,7 +12,9 @@ describe('Button', () => {
 	});
 	it('should render an unhighlighted button if the unhighlighted tag is given', () => {
 		let wrapper = shallow(<Button btnName={'AC'} btnTags={{ UNHIGHLIGHTED }} />);
-		expect(wrapper.find(StyledUnhighlightedButton)).toHaveLength(1);
+		const unhighlightedButton = wrapper.find(StyledUnhighlightedButton);
+
+		expect(unhighlightedButton.exists()).toBe(true);
 	});
 
 	it('should display the correct value on the button', () => {
