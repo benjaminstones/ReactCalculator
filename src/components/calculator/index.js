@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import ButtonContainer from '../../components/buttonContainer';
 import Display from '../../components/display/index.js';
