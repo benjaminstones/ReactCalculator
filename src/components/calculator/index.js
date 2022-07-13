@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import ButtonContainer from '../../components/buttonContainer';
 import Display from '../../components/display/index.js';
@@ -6,7 +7,7 @@ import { calculateExpressionFromString, isBtnTagFound } from '../../stringUtils'
 import { StyledCalculatorContainer } from './styles/styled';
 
 
-export const Calculator = () => {
+function Calculator() {
 	const [total, setTotal] = useState(EMPTY);
 	const [expression, setExpression] = useState(EMPTY);
 
@@ -43,3 +44,5 @@ export const Calculator = () => {
 		</StyledCalculatorContainer>
 	);
 }
+
+export default Calculator;

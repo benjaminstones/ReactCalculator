@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator should render the Calculator Component correctly 1`] = `
+<styled.div>
+  <Display
+    expression="0"
+    total="0"
+  />
+  <ButtonContainer
+    clickHandler={[Function]}
+  />
+</styled.div>
+`;
