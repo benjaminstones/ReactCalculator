@@ -4,10 +4,12 @@ exports[`Calculator should render the Calculator Component correctly 1`] = `
 <styled.div>
   <Display
     expression="0"
+    id="display"
     total="0"
   />
   <ButtonContainer
     clickHandler={[Function]}
+    id="button-container"
   />
 </styled.div>
 `;
