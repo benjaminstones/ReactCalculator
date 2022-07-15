@@ -15,4 +15,10 @@ describe('Calculator', () => {
 
 		expect(display.exists()).toBe(true);
 	})
+
+	it('should render a button container', () => {
+		const buttonContainer = wrapper.find('#button-container');
+
+		expect(buttonContainer.exists()).toBe(true);
+	})
 });
