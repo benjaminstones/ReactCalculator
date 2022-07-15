@@ -39,7 +39,7 @@ function Calculator() {
 
 	return (
 		<StyledCalculatorContainer>
-			<Display expression={expression} total={total} />
+			<Display id='display' expression={expression} total={total} />
 			<ButtonContainer clickHandler={handleClick} />
 		</StyledCalculatorContainer>
 	);

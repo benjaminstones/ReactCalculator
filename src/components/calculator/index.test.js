@@ -9,4 +9,10 @@ describe('Calculator', () => {
 	it('should render the Calculator Component correctly', () => {
 		expect(wrapper).toMatchSnapshot();
 	});
+
+	it('should render a display', () => {
+		const display = wrapper.find('#display');
+
+		expect(display.exists()).toBe(true);
+	})
 });
