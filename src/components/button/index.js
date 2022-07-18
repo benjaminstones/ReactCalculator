@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HIGHLIGHTED } from '../../constants';
-import { isBtnTagFound } from '../../stringUtils';
+import { isBtnTagFound } from '../../utils/stringUtils';
 import { StyledButtonContainer, StyledHighlightedButton, StyledUnhighlightedButton } from './styles/styled';
 
 function Button(props) {

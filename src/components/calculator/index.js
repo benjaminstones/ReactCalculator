@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ButtonContainer from '../../components/buttonContainer';
 import Display from '../../components/display/index.js';
 import { DIVIDE_SIGN, EMPTY, MULTIPLY_SIGN, NON_OPERATOR_CHAR, OPERATOR_CHAR } from '../../constants/index.js';
-import { calculateExpressionFromString, isBtnTagFound } from '../../stringUtils';
+import { calculateExpressionFromString, isBtnTagFound } from '../../utils/stringUtils';
 import { StyledCalculatorContainer } from './styles/styled';
 
 
