@@ -20,6 +20,15 @@ describe('My First Test', () => {
 		cy.get('[data-cy="expression"]').contains('45-6=')
 		cy.get('[data-cy="total"]').contains('39')
 	})
+	it('Performs a single multiplication', () => {
+		cy.visit('http://localhost:3000/ReactCalculator')
+		cy.contains('4').click();
+		cy.contains('\u00d7').click();
+		cy.contains('2').click();
+		cy.contains('=').click();
+		cy.get('[data-cy="expression"]').contains('4\u00d72=')
+		cy.get('[data-cy="total"]').contains('8')
+	})
 	it('Clears the contents of the display', () => {
 		cy.visit('http://localhost:3000/ReactCalculator')
 		cy.contains('4').click();
