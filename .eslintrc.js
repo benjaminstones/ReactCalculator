@@ -32,5 +32,8 @@ module.exports = {
 		],
 		'react/prop-types': 0,
 		'react/react-in-jsx-scope': 'off'
+	},
+	'globals': {
+		'cy': true
 	}
 }

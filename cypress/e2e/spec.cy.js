@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 describe('Core functionality', () => {
 	it('Performs a single addition', () => {
 		cy.visit('http://localhost:3000/ReactCalculator')
