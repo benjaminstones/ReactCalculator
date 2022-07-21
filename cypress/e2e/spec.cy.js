@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-describe('My First Test', () => {
+describe('Core functionality', () => {
 	it('Performs a single addition', () => {
 		cy.visit('http://localhost:3000/ReactCalculator')
 		cy.contains('4').click();
@@ -50,5 +50,4 @@ describe('My First Test', () => {
 		cy.get('[data-cy="expression"]').contains('0')
 		cy.get('[data-cy="total"]').contains('0')
 	})
-  
 })
