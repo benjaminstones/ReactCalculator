@@ -16,3 +16,20 @@ exports[`Display should render the Display Component correctly 1`] = `
   </styled.h1>
 </styled.div>
 `;
+
+exports[`Display should render the Display Component correctly with a expression overflowing onto 2 lines 1`] = `
+<styled.div>
+  <styled.h1
+    data-cy="expression"
+    id="expression-display"
+  >
+    2+3+4+5+6+7+8+9+78+7+5+4+3+2+1+2+3+4+5=
+  </styled.h1>
+  <styled.h1
+    data-cy="total"
+    id="total-display"
+  >
+    158
+  </styled.h1>
+</styled.div>
+`;

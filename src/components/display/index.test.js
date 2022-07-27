@@ -9,6 +9,10 @@ describe('Display', () => {
 	it('should render the Display Component correctly', () => {
 		expect(wrapper).toMatchSnapshot();
 	});
+	it('should render the Display Component correctly with a expression overflowing onto 2 lines', () => {
+		let overflowWrapper = shallow(<Display expression='2+3+4+5+6+7+8+9+78+7+5+4+3+2+1+2+3+4+5=' total='158' />);
+		expect(overflowWrapper).toMatchSnapshot();
+	});
 	it('should render an expression and total in the display', () => {
 		const expressionDisplay = wrapper.find('#expression-display');
 		const totalDisplay = wrapper.find('#total-display')
