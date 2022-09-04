@@ -4,7 +4,7 @@ A simple react calculator using the *[string-math](https://www.npmjs.com/package
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-The goal of this small project is to familiarise myself with React and and other JS/frontend tools amd practices, including:
+The goal of this small project is to familiarise myself with React and other JS/frontend tools and practices, including:
 
 - Jest
 - Cypress
